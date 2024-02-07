@@ -6,6 +6,6 @@ import Birthday from './Birthday.svelte';
 describe('Birthday', () => {
 	it('has the name of a person', () => {
 		render(Birthday, { name: 'Hercules' });
-		expect(screen.queryByText);
+		expect(screen.queryByText('Hercules')).toBeVisible();
 	});
 });
