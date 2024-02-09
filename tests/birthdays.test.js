@@ -5,5 +5,6 @@ test('list of birthdays on route /birthdays', async ({ page }) => {
 	await page.goto('/birthdays');
 
 	//
-	// TODO: await expect(page.?);
+	await expect(page.getByText('Hercules')).toBeVisible();
+	await expect(page.getByText('Athena')).toBeVisible();
 });
