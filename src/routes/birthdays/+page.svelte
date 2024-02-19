@@ -1,5 +1,6 @@
 <script>
   import Birthday from "./Birthday.svelte";
+  import BirthdayForm from "./BirthdayForm.svelte";
 
   export let data;
   console.log(data);
@@ -14,3 +15,6 @@
     </li>
   {/each}
 </ul>
+
+<h1>Birthdays forms</h1>
+<BirthdayForm />

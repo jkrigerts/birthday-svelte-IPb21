@@ -14,4 +14,6 @@ test('a new person can be added', async ({ page }) => {
 	await page.getByLabel('Name').fill('Bruno');
 	await page.getByLabel('Date of birth').fill('2005-11-29');
 	await page.getByRole('button').click();
+	await expect(page.getByText('Bruno')).toBeVisible();
+	await expect(page.getByText('2005-11-29')).toBeVisible();
 });
